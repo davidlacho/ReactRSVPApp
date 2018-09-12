@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import GuestList from './GuestList';
 import Header from './Header';
 import MainContent from './MainContent';
 
@@ -102,8 +101,7 @@ class App extends Component {
     const numberUnconfirmed = totalInvited - numberAttending;
     return (<div className="App">
       <Header pendingGuest={this.state.pendingGuest} handleNameInput={this.handleNameInput} newGuestSubmitHandler={this.newGuestSubmitHandler}/>
-      <MainContent toggleFilter={this.toggleFilter} isFiltered={this.isFiltered} totalInvited={totalInvited} numberAttending={numberAttending} numberUnconfirmed={numberUnconfirmed}/>
-      <GuestList guests={this.state.guests} toggleConfirmationAt={this.toggleConfirmationAt} toggleIsEditingAt={this.toggleIsEditingAt} setNameAt={this.setNameAt} isFiltered={this.state.isFiltered} removeGuestAt={this.removeGuestAt} pendingGuest={this.state.pendingGuest}/>
+      <MainContent toggleFilter={this.toggleFilter} isFiltered={this.isFiltered} totalInvited={totalInvited} numberAttending={numberAttending} numberUnconfirmed={numberUnconfirmed} guests={this.state.guests} toggleConfirmationAt={this.toggleConfirmationAt} toggleIsEditingAt={this.toggleIsEditingAt} setNameAt={this.setNameAt} isFiltered={this.state.isFiltered} removeGuestAt={this.removeGuestAt} pendingGuest={this.state.pendingGuest}/>
     </div>);
   }
 }
