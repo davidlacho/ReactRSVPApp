@@ -22,7 +22,7 @@ const Counter = props => {
 
 
 Counter.propTypes = {
-  numberAttending : PropTypes.number,
+  numberAttending: PropTypes.number,
   numberUnconfirmed: PropTypes.number,
   totalInvited: PropTypes.number
 }
