@@ -8,19 +8,7 @@ class App extends Component {
     isFiltered: false,
     pendingGuest: "",
     guests: [
-      {
-        name: 'Treasure',
-        isConfirmed: false,
-        isEditing: false
-      }, {
-        name: 'Nic',
-        isConfirmed: true,
-        isEditing: false
-      }, {
-        name: 'Matt K',
-        isConfirmed: false,
-        isEditing: false
-      }
+      
     ]
   };
 
