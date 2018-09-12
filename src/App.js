@@ -125,7 +125,7 @@ class App extends Component {
             </tr>
           </tbody>
         </table>
-        <GuestList guests={this.state.guests} toggleConfirmationAt={this.toggleConfirmationAt} toggleIsEditingAt={this.toggleIsEditingAt} setNameAt={this.setNameAt} isFiltered={this.state.isFiltered} removeGuestAt={this.removeGuestAt}/>
+        <GuestList guests={this.state.guests} toggleConfirmationAt={this.toggleConfirmationAt} toggleIsEditingAt={this.toggleIsEditingAt} setNameAt={this.setNameAt} isFiltered={this.state.isFiltered} removeGuestAt={this.removeGuestAt} pendingGuest={this.state.pendingGuest}/>
       </div>
     </div>);
   }
